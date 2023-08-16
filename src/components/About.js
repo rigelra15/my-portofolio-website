@@ -23,11 +23,13 @@ export default function About() {
     <section id="about" style={{ backgroundColor: isDarkMode ? '#181818' : 'white' }}>
       <div className="top-20 container mx-auto px-1 flex md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" style={{ color: isDarkMode ? 'white' : 'black' }}>
-          <h1 className="title-font sm:text-4xl text-3xl mb-5 font-bold">
+          <h1 className="title-font sm:text-4xl text-3xl mb-2 font-bold">
             Hi There,
-            <br className="hidden lg:inline-block" />I am <span className="text-sky-500">Rigel</span> Ramadhani W.
           </h1>
-          <p className="mb-8 leading-relaxed">
+          <h1 className="title-font sm:text-4xl text-3xl mb-5 font-bold">
+            I am <span className="text-sky-500">Rigel</span> Ramadhani W.
+          </h1>
+          <p className="mb-8 leading-relaxed px-5 md:px-0">
             Passionate about crafting beautiful interfaces that captivate users. Let's collaborate and bring your ideas to life!
           </p>
           <div className="flex justify-center">
