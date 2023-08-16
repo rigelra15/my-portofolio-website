@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav style={{ backgroundColor: isDarkMode ? '#212121' : '#f0f0f0' }} className="py-5 rounded-b-[30px] fixed top-0 left-0 right-0">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center sm:hidden">
             <a href="#" style={{ color: isDarkMode ? 'white' : '#212121' }} className="text-2xl font-bold">Rigel R.</a>
 
             <ul className="flex space-x-8">

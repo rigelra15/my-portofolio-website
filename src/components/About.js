@@ -21,7 +21,7 @@ export default function About() {
 
   return (
     <section id="about" style={{ backgroundColor: isDarkMode ? '#181818' : 'white' }}>
-      <div className="top-20 container mx-auto flex md:flex-row flex-col items-center">
+      <div className="top-20 container mx-auto px-1 flex md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" style={{ color: isDarkMode ? 'white' : 'black' }}>
           <h1 className="title-font sm:text-4xl text-3xl mb-5 font-bold">
             Hi There,
