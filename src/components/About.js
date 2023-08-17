@@ -20,8 +20,8 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" style={{ backgroundColor: isDarkMode ? '#181818' : 'white' }}>
-      <div className="top-20 container mx-auto px-1 flex md:flex-row flex-col items-center">
+    <section id="about" style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0' }} className="ease-in-out duration-300">
+      <div className="top-20 container pt-[8rem] md:pt-[5rem] mx-auto px-1 flex md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" style={{ color: isDarkMode ? 'white' : 'black' }}>
           <h1 className="title-font sm:text-4xl text-3xl mb-2 font-bold">
             Hi There,
@@ -40,7 +40,7 @@ export default function About() {
             </a>
             <a
               href="#projects"
-              className={`ml-4 inline-flex text-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg ${isDarkMode ? 'bg-gray-500' : 'bg-white'}`}>
+              className={`ml-4 inline-flex text-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 hover:text-white rounded text-lg ${isDarkMode ? 'bg-gray-500' : 'bg-white'} ${isDarkMode ? '' : 'border-sky-300 border-2' }`}>
               See Skills
             </a>
           </div>

@@ -11,7 +11,7 @@ export default function App() {
         <div className="fixed top-0 left-0 right-0 z-50"> {/* Increase z-index value */}
           <Navbar />
         </div>
-        <div className="mt-[8rem] md:mt-24"> {/* Adjust the top margin based on your design */}
+        <div>
           <About />
         </div>
       </main>
