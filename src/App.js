@@ -3,6 +3,7 @@ import './App.css';
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import { DarkModeProvider } from "./DarkModeContext"; // Import the DarkModeProvider
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <div>
           <About />
         </div>
+        <Footer />
       </main>
     </DarkModeProvider>
   );
