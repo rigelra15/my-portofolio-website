@@ -4,7 +4,7 @@ import './About.css';
 
 export default function About() {
   const { isDarkMode } = useDarkModeContext();
-  const images = ["./2.png", "./4.png", "./6.png"];
+  const images = ["./2-min.png", "./4-min.png", "./6-min.png"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
