@@ -5,11 +5,22 @@ import { useDarkModeContext } from "../DarkModeContext";
 function MobileMenu({ isDarkMode, toggleDarkMode, isOpen, onToggle }) {
   return (
     <div
-      className={`fixed top-0 left-0 right-0 bottom-0 ${isDarkMode ? 'bg-[#212121]' : 'bg-white' } transition-opacity duration-300 ${
+      className={`fixed top-0 left-0 right-0 bottom-0 transition-all ease-linear duration-300 ${
         isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
+      style={{ backgroundColor: isDarkMode ? 'rgba(33, 33, 33, 0.8)' : 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(10px)'}}
     >
-      <div className="flex justify-end p-5">
+      <div className="flex justify-between p-5 transition-all duration-300 ease-linear">
+        <button
+          className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 rounded-full text-xl p-2 transition-all duration-300 ease-linear"
+          onClick={toggleDarkMode}
+        >
+          {isDarkMode ? (
+            <FaSun style={{ color: "orange" }} />
+          ) : (
+            <FaMoon style={{ color: "orange" }} />
+          )}
+        </button>
         <button onClick={onToggle}>
           {isOpen ? (
             <FaTimes style={{ color: isDarkMode ? 'white' : 'black' }} />

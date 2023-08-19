@@ -20,13 +20,13 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0' }} className="ease-in-out duration-300">
+    <div id="about" style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0' }} className="ease-in-out duration-300">
       <div className="top-20 container pt-[8rem] md:pt-[1rem] mx-auto px-1 flex md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" style={{ color: isDarkMode ? 'white' : 'black' }}>
-          <h1 className="title-font sm:text-4xl text-3xl mb-2 font-bold">
+          <h1 className="title-font text-3xl md:text-4xl mb-2 font-bold">
             Hi There,
           </h1>
-          <h1 className="title-font sm:text-4xl text-3xl mb-5 font-bold">
+          <h1 className="title-font text-3xl md:text-4xl mb-5 font-bold">
             I am <span className="text-sky-500">Rigel</span> Ramadhani W.
           </h1>
           <p className="mb-8 leading-relaxed px-5 md:px-0">
@@ -45,7 +45,7 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hover:animate-testing transition-all duration-300 relative">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hover:animate-testing transition-all duration-300 relative mt-10">
           <img
             className="object-cover object-center inset-4 rounded animate-testing"
             alt="hero"
@@ -61,6 +61,6 @@ export default function About() {
         }
         `}
       </style>
-    </section>
+    </div>
   );
 }
