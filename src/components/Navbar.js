@@ -5,14 +5,14 @@ import { useDarkModeContext } from "../DarkModeContext";
 function MobileMenu({ isDarkMode, toggleDarkMode, isOpen, onToggle }) {
   return (
     <div
-      className={`fixed top-0 left-0 right-0 bottom-0 transition-all ease-linear duration-300 ${
+      className={`fixed top-0 left-0 right-0 bottom-0 ${
         isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
       style={{ backgroundColor: isDarkMode ? 'rgba(33, 33, 33, 0.8)' : 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(10px)'}}
     >
-      <div className="flex justify-between p-5 transition-all duration-300 ease-linear">
+      <div className="flex justify-between p-5">
         <button
-          className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 rounded-full text-xl p-2 transition-all duration-300 ease-linear"
+          className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 rounded-full text-xl p-2"
           onClick={toggleDarkMode}
         >
           {isDarkMode ? (
@@ -94,7 +94,7 @@ export default function Navbar() {
   return (
     <nav
       style={{ backgroundColor: isDarkMode ? "#212121" : "#ffffff" }}
-      className="py-5 px-10 rounded-b-[30px] fixed top-0 left-0 right-0 ease-in-out duration-300"
+      className="py-5 px-10 rounded-b-[30px] fixed top-0 left-0 right-0"
     >
       <div className="container mx-auto flex justify-between items-center">
         <a
