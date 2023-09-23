@@ -20,11 +20,11 @@ export default function Footer() {
             </div>
             <div className={`md:border-none border-dotted ${isDarkMode ? 'border-white' : 'border-black'} border-[1px] opacity-10 mt-5`}></div>
             <div className='footer-content md:pt-0 pt-5 md:text-left text-center' style={{ color: isDarkMode ? 'white' : 'black' }}>
-                <li><a href="#" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Home</a></li>
-                <li><a href="#" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>About Me</a></li>
-                <li><a href="#" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Portofolio</a></li>
-                <li><a href="#" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Contact</a></li>
-                <li><a href="#" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Blog</a></li>
+                <li><a href="#home" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Home</a></li>
+                <li><a href="#about" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>About Me</a></li>
+                <li><a href="#portofolio" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Portofolio</a></li>
+                <li><a href="#contact" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Contact</a></li>
+                <li><a href="#blog" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Blog</a></li>
             </div>
         </section>
         <footer style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0' }} className='text-center text-[15px] py-4'>
