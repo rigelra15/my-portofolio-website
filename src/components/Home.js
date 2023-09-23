@@ -43,13 +43,13 @@ export default function Home() {
             </a>
             <a
               href="#skills"
-              className={`ml-4 transition-all duration-300 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-300' }`}>
+              className={`ml-4 transition-all duration-300 inline-flex border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-400' }`}>
               See Skills
             </a>
             <a
               href="https://drive.google.com/file/d/1wfYyNGMaD_qHC6Icjm2COIZ4tr_Zb7YB/view?usp=sharing"
               target="_blank"
-              className={`ml-4 transition-all duration-300 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-500 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-300' }`}>
+              className={`ml-4 transition-all duration-300 inline-flex border-0 py-2 px-6 focus:outline-none hover:bg-red-500 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-400' }`}>
                 <div className="flex flex-row justify-center items-center gap-2">
                   My CV
                   <FaFilePdf />
