@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDarkModeContext } from "../DarkModeContext";
 import './Home.css';
+import { FaFilePdf } from "react-icons/fa";
 
 export default function Home() {
   const { isDarkMode } = useDarkModeContext();
@@ -34,16 +35,25 @@ export default function Home() {
           </p>
 
           {/* Buttons */}
-          <div className="flex justify-center">
+          <div className="flex justify-center transition-all duration-300">
             <a
               href="#portfolio"
-              className="inline-flex text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded text-lg">
+              className="inline-flex text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded-xl text-lg transition-all duration-300">
               View Portfolio
             </a>
             <a
               href="#skills"
-              className={`ml-4 inline-flex text-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 hover:text-white rounded text-lg ${isDarkMode ? 'bg-gray-500' : 'bg-white'} ${isDarkMode ? '' : 'border-sky-300 border-2' }`}>
+              className={`ml-4 transition-all duration-300 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-sky-700 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-300' }`}>
               See Skills
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1wfYyNGMaD_qHC6Icjm2COIZ4tr_Zb7YB/view?usp=sharing"
+              target="_blank"
+              className={`ml-4 transition-all duration-300 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-red-500 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-300' }`}>
+                <div className="flex flex-row justify-center items-center gap-2">
+                  My CV
+                  <FaFilePdf />
+                </div>
             </a>
           </div>
         </div>

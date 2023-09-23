@@ -34,10 +34,10 @@ function MobileMenu({ isDarkMode, toggleDarkMode, isOpen, onToggle }) {
           <a
             href="#"
             style={{
-              backgroundColor: isDarkMode ? "#3d3d3d" : "gray",
-              color: isDarkMode ? "white" : "white",
+              color: isDarkMode ? "white" : "black",
             }}
-            className="px-4 py-2 rounded-full font-semibold"
+            onClick={onToggle}
+            className="px-4 py-2 font-semibold"
           >
             Home
           </a>
@@ -47,33 +47,37 @@ function MobileMenu({ isDarkMode, toggleDarkMode, isOpen, onToggle }) {
             href="#about"
             style={{ color: isDarkMode ? "white" : "black" }}
             className="px-4 py-2 font-semibold"
+            onClick={onToggle}
           >
             About Me
           </a>
         </li>
         <li>
           <a
-            href="#"
+            href="#portfolio"
             style={{ color: isDarkMode ? "white" : "black" }}
             className="px-4 py-2 font-semibold"
+            onClick={onToggle}
           >
-            Portofolio
+            Portfolio
           </a>
         </li>
         <li>
           <a
-            href=""
+            href="#contact"
             style={{ color: isDarkMode ? "white" : "black" }}
             className="px-4 py-2 font-semibold"
+            onClick={onToggle}
           >
             Contact
           </a>
         </li>
         <li>
           <a
-            href=""
+            href="#blog"
             style={{ color: isDarkMode ? "white" : "black" }}
             className="px-4 py-2 font-semibold"
+            onClick={onToggle}
           >
             Blog
           </a>
@@ -94,9 +98,9 @@ export default function Navbar() {
   return (
     <nav
       style={{ backgroundColor: isDarkMode ? "#212121" : "#ffffff" }}
-      className="px-10 rounded-b-[30px] fixed top-0 left-0 right-0"
+      className=" rounded-b-[30px] fixed top-0 left-0 right-0"
     >
-      <div className="flex justify-between items-center" style={{ padding: '20px 15% 20px' }}>
+      <div className="flex justify-between items-center" style={{ padding: '20px 10% 20px' }}>
         <a
           href="#"
           style={{ color: isDarkMode ? "white" : "#212121" }}
@@ -106,11 +110,11 @@ export default function Navbar() {
         </a>
 
         <ul className="hidden md:flex space-x-8">
-          <li><a href="#home" style={{ backgroundColor: isDarkMode ? '#3d3d3d' : 'gray', color: isDarkMode ? 'white' : 'white' }} class="bg-gray-200 px-4 py-2 rounded-full ease-in-out duration-300 font-semibold hover:cursor-pointer">Home</a></li>
-          <li><a href="#about" style={{ color: isDarkMode ? 'white' : '#212121' }} class="hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer">About Me</a></li>
-          <li><a href="#portfolio" style={{ color: isDarkMode ? 'white' : '#212121' }} class="hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer">Portofolio</a></li>
-          <li><a href="#contact" style={{ color: isDarkMode ? 'white' : '#212121' }} class="hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer">Contact</a></li>
-          <li><a href="#blog" style={{ color: isDarkMode ? 'white' : '#212121' }} class="hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer">Blog</a></li>
+          <li><a href="#home" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Home</a></li>
+          <li><a href="#about" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>About Me</a></li>
+          <li><a href="#portfolio" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Portfolio</a></li>
+          <li><a href="#contact" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Contact</a></li>
+          <li><a href="#blog" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Blog</a></li>
       </ul>
 
         <button

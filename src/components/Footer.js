@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Import your CSS file for styling
+import './Footer.css';
 import { useDarkModeContext } from "../DarkModeContext";
 import { FaGithub, FaGoogle, FaInstagram, FaLinkedin, FaRegEnvelope, FaTiktok, FaTwitter } from 'react-icons/fa';
 
@@ -22,7 +22,7 @@ export default function Footer() {
             <div className='footer-content md:pt-0 pt-5 md:text-left text-center' style={{ color: isDarkMode ? 'white' : 'black' }}>
                 <li><a href="#home" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Home</a></li>
                 <li><a href="#about" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>About Me</a></li>
-                <li><a href="#portofolio" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Portofolio</a></li>
+                <li><a href="#portfolio" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Portofolio</a></li>
                 <li><a href="#contact" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Contact</a></li>
                 <li><a href="#blog" className='hover:translate-x-[-3px] hover:translate-y-[-5px] hover:text-sky-500'>Blog</a></li>
             </div>
