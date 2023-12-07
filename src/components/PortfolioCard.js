@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDarkModeContext } from "../DarkModeContext";
 import { FaFigma } from "react-icons/fa";
+import { FaBehanceSquare } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PortfolioCard = ({ item }) => {
   const { title, description, imageSrc, link, year } = item;
@@ -10,7 +12,7 @@ const PortfolioCard = ({ item }) => {
 
   return (
     <div className={`bg-white hover:translate-y-2 transition-all duration-300 rounded-xl overflow-hidden ${isDarkMode ? 'bg-zinc-900' : 'bg-white'}`}  style={{ boxShadow: '8px 8px 20px 0px rgba(0, 0, 0, 0.1)'}}>
-      <img src={imageSrc} alt={title} className="w-full" />
+      <LazyLoadImage src={imageSrc} alt={title} className="w-full" loading="lazy" />
       <div className="px-6 py-4">
         <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
           {title}
@@ -48,9 +50,14 @@ const PortfolioCard = ({ item }) => {
             <div className="flex flex-row gap-3 justify-center items-center">
                 <a
                 href={link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`text-sm font-semibold px-3 py-2 rounded-xl hover:bg-gray-600 border-2 border-gray-300 hover:text-white transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}
                 >
-                    View Project
+                    <div className="flex flex-row gap-2 items-center justify-center">
+                      <FaBehanceSquare className="text-xl" />
+                      <span>View Project</span>
+                    </div>
                 </a>
             </div>
             <div className="bg-sky-500 px-3 py-2 rounded-xl font-bold text-white">

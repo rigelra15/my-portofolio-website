@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDarkModeContext } from "../DarkModeContext";
 import './Home.css';
 import { FaFilePdf } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Home() {
   const { isDarkMode } = useDarkModeContext();
@@ -58,10 +59,11 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hover:animate-testing relative mt-0 md:mt-10">
-          <img
+          <LazyLoadImage
             className="object-cover object-center inset-4 rounded animate-testing"
             alt="hero"
             src={images[currentImageIndex]}
+            loading="lazy"
           />
         </div>
       </div>

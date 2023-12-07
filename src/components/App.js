@@ -8,6 +8,7 @@ import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
 import Skills from "./Skills";
 import { FaChevronUp } from "react-icons/fa";
+import Awards from "./Awards";
 
 function BackToTopButton({ onClick }) {
   const { isDarkMode } = useDarkModeContext();
@@ -34,6 +35,7 @@ export default function App() {
   const aboutRef = useRef(null);
   const portfolioRef = useRef(null);
   const skillsRef = useRef(null);
+  const awardsRef = useRef(null);
 
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -75,6 +77,9 @@ export default function App() {
           </div>
           <div id="portfolio" ref={portfolioRef}>
             <Portfolio />
+          </div>
+          <div id="awards" ref={awardsRef}>
+            <Awards />
           </div>
           <div id="skills" ref={skillsRef}>
             <Skills />

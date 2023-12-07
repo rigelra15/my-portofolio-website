@@ -64,12 +64,12 @@ function MobileMenu({ isDarkMode, toggleDarkMode, isOpen, onToggle }) {
         </li>
         <li>
           <a
-            href="#contact"
+            href="#awards"
             style={{ color: isDarkMode ? "white" : "black" }}
             className="px-4 py-2 font-semibold"
             onClick={onToggle}
           >
-            Contact
+            Awards
           </a>
         </li>
         <li>
@@ -110,11 +110,11 @@ export default function Navbar() {
         </a>
 
         <ul className="hidden md:flex space-x-8">
-          <li><a href="#home" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Home</a></li>
-          <li><a href="#about" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>About Me</a></li>
-          <li><a href="#portfolio" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Portfolio</a></li>
-          <li><a href="#contact" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Contact</a></li>
-          <li><a href="#blog" style={{ color: isDarkMode ? 'white' : '#212121' }} class={`hover:bg-gray-700 hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-300'}`}>Blog</a></li>
+          <li><a href="#home" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>Home</a></li>
+          <li><a href="#about" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>About Me</a></li>
+          <li><a href="#portfolio" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>Portfolio</a></li>
+          <li><a href="#contact" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>Awards</a></li>
+          <li><a href="#blog" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>Blog</a></li>
       </ul>
 
         <button
