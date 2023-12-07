@@ -44,7 +44,7 @@ const Portfolio = () => {
           <h2 className="text-xl md:text-2xl mb-4 font-bold">
               Portfolios
           </h2>
-          <a href="https://drive.google.com/file/d/1v1JNoXdXKxdcQZTcd9pNj8JKCT_3oBwO/view?usp=sharing" target="_blank" className={`transition-all duration-300 mb-4 flex flex-row justify-center items-center gap-2 px-3 py-2 rounded-xl hover:cursor-pointer hover:bg-red-500 border-2 border-gray-200 ${isDarkMode ? 'text-white' : 'text-red-500 hover:text-white'}`}>
+          <a href="https://drive.google.com/file/d/1v1JNoXdXKxdcQZTcd9pNj8JKCT_3oBwO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={`transition-all duration-300 mb-4 flex flex-row justify-center items-center gap-2 px-3 py-2 rounded-xl hover:cursor-pointer hover:bg-red-500 border-2 border-gray-200 ${isDarkMode ? 'text-white' : 'text-red-500 hover:text-white'}`}>
             <span>PDF</span>
             <FaFilePdf />
           </a>

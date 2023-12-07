@@ -23,7 +23,7 @@ export default function Footer() {
         <>
             <section className={`md:flex md:justify-between ${isDarkMode ? 'bg-[#212121]' : 'bg-white'}`}>
                 <div className='footer-content md:text-left text-center'>
-                    <a href="#" className={`md:text-[33px] text-[30px] ${isDarkMode ? 'text-white' : 'text-black'} font-bold`} >
+                    <a href="/" className={`md:text-[33px] text-[30px] ${isDarkMode ? 'text-white' : 'text-black'} font-bold`} >
                         <span className='text-sky-500'>Rigel</span> Ramadhani W.
                     </a>
                     <div className='icon pt-5'>

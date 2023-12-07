@@ -19,7 +19,7 @@ export default function Home() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [images.length]);
 
   return (
     <section id="home" style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0' }}>
@@ -50,6 +50,7 @@ export default function Home() {
             <a
               href="https://drive.google.com/file/d/1wfYyNGMaD_qHC6Icjm2COIZ4tr_Zb7YB/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
               className={`ml-4 transition-all duration-300 inline-flex border-0 py-2 px-6 focus:outline-none hover:bg-red-500 hover:text-white rounded-xl text-lg ${isDarkMode ? 'border-2 border-gray-200' : 'bg-white'} ${isDarkMode ? '' : 'border-gray-300 border-2 text-gray-400' }`}>
                 <div className="flex flex-row justify-center items-center gap-2">
                   My CV

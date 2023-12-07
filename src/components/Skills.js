@@ -1,9 +1,8 @@
 import React from 'react';
 import './AboutMe.css';
 import { useDarkModeContext } from "../DarkModeContext";
-import { FaCss3, FaFigma, FaHtml5, FaReact } from 'react-icons/fa';
+import { FaCss3, FaHtml5, FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from "react-icons/io";
-import { SiFlutter } from "react-icons/si";
 
 const Skills = () => {
     const { isDarkMode } = useDarkModeContext();
@@ -14,7 +13,7 @@ const Skills = () => {
                 <h2 className="text-xl md:text-2xl mb-4 font-bold">
                     Skills
                 </h2>
-                <div className='grid grid-cols-5 md:flex-row gap-4'>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
                     <span className='w-full h-full py-3 rounded-xl text-center border-2 border-gray-300 transition-all duration-300'>
                         <div className='flex flex-row items-center justify-center gap-2'>
                             <span>HTML</span>

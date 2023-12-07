@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDarkModeContext } from "../DarkModeContext";
-import { FaFigma } from "react-icons/fa";
 import { FaBehanceSquare } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

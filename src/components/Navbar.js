@@ -32,7 +32,7 @@ function MobileMenu({ isDarkMode, toggleDarkMode, isOpen, onToggle }) {
       <ul className="flex flex-col items-center space-y-4">
         <li>
           <a
-            href="#"
+            href="/"
             style={{
               color: isDarkMode ? "white" : "black",
             }}
@@ -102,7 +102,7 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center" style={{ padding: '20px 10% 20px' }}>
         <a
-          href="#"
+          href="/"
           style={{ color: isDarkMode ? "white" : "#212121" }}
           className="text-2xl font-bold"
         >

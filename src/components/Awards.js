@@ -1,8 +1,6 @@
 import React from "react";
 import AwardsCard from "./AwardsCard";
 import { useDarkModeContext } from "../DarkModeContext";
-import { FaFilePdf } from "react-icons/fa";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Awards = () => {
   const awardsItems = [
