@@ -30,7 +30,7 @@ export default function Home() {
             Hi There,
           </h1>
           <h1 className="title-font text-3xl md:text-4xl mb-5 font-bold">
-            I am <span className="text-sky-500">Rigel</span> Ramadhani Waloni
+            I am <span className="text-sky-500">Rigel</span> Ramadhani W.
           </h1>
           <p className="mb-8 leading-relaxed px-5 md:px-0">
             Passionate about crafting beautiful interfaces that captivate users. Let's collaborate and bring your ideas to life!
