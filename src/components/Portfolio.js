@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioCard from "./PortfolioCard";
 import { useDarkModeContext } from "../DarkModeContext";
-import { FaFilePdf } from "react-icons/fa";
+import { FaFile, FaFilePdf } from "react-icons/fa";
 
 const Portfolio = () => {
   const portfolioItems = [
@@ -33,16 +33,25 @@ const Portfolio = () => {
       link: "https://www.behance.net/gallery/178893773/Lanyard-Logo-and-ID-Card-Design",
       year: 2023
     },
+    {
+      title: "Personal Online Store Website | HyperTopia ID",
+      description: "The HyperTopia ID website is a testament to the power of design in creating a seamless user experience. This project showcases my skills in UI/UX design, emphasizing user-centered solutions and maintaining brand consistency. The result is a visually cohesive and user-friendly UI that offers improved product exploration and a more intuitive shopping journey.",
+      imageSrc: "portfolio/5.png",
+      link: "https://hypertopia-id.vercel.app",
+      year: 2023
+    },
+    
   ];
 
   const { isDarkMode } = useDarkModeContext();
 
   return (
-    <section id="projects" className="pt-8 w-[100svw]" style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0', color: isDarkMode ? 'white' : 'black' }}>
+    <section id="projects" className="pt-4 w-[100svw]" style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0', color: isDarkMode ? 'white' : 'black' }}>
       <div className={`container mx-auto py-8 px-8 rounded-xl transition-all duration-300 ${isDarkMode ? 'bg-[#3d3d3d]' : 'bg-white'}`} style={{ boxShadow: '8px 8px 20px 0px rgba(0, 0, 0, 0.2)'}}>
         <div className="flex justify-between items-center">
-          <h2 className="text-xl md:text-2xl mb-4 font-bold">
-              Portfolios
+          <h2 className="text-xl md:text-2xl mb-2 font-bold flex items-center gap-2">
+              <FaFile className='inline-block text-xl mr-2' />
+              <span>Portofolios</span>
           </h2>
           <a href="https://drive.google.com/file/d/1v1JNoXdXKxdcQZTcd9pNj8JKCT_3oBwO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={`transition-all duration-300 mb-4 flex flex-row justify-center items-center gap-2 px-3 py-2 rounded-xl hover:cursor-pointer hover:bg-red-500 border-2 border-gray-200 ${isDarkMode ? 'text-white' : 'text-red-500 hover:text-white'}`}>
             <span>PDF</span>

@@ -3,6 +3,7 @@ import './AboutMe.css';
 import { useDarkModeContext } from "../DarkModeContext";
 import { FaCss3, FaHtml5, FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from "react-icons/io";
+import { BsPersonFillGear } from 'react-icons/bs';
 
 const Skills = () => {
     const { isDarkMode } = useDarkModeContext();
@@ -10,8 +11,9 @@ const Skills = () => {
     <section id='about-me' className='pt-8' style={{ backgroundColor: isDarkMode ? '#181818' : '#f0f0f0', color: isDarkMode ? 'white' : 'black' }}>
         <div className={`py-4 ${isDarkMode ? 'bg-[#3d3d3d] text-white' : 'bg-white text-black'} rounded-xl`} style={{ boxShadow: '8px 8px 20px 0px rgba(0, 0, 0, 0.2)'}}>
             <div className='px-8 py-2'>
-                <h2 className="text-xl md:text-2xl mb-4 font-bold">
-                    Skills
+                <h2 className="text-xl md:text-2xl mb-2 font-bold flex items-center gap-2">
+                    <BsPersonFillGear className='inline-block text-xl mr-2' />
+                    <span>Skills</span>
                 </h2>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
                     <span className='w-full h-full py-3 rounded-xl text-center border-2 border-gray-300 transition-all duration-300'>

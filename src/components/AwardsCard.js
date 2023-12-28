@@ -9,7 +9,7 @@ const AwardsCard = ({ item }) => {
     const { isDarkMode } = useDarkModeContext();
 
   return (
-    <div className={`bg-white hover:translate-y-2 transition-all duration-300 rounded-xl overflow-hidden ${isDarkMode ? 'bg-zinc-900' : 'bg-white'}`}  style={{ boxShadow: '8px 8px 20px 0px rgba(0, 0, 0, 0.1)'}}>
+    <div className={`bg-white hover:translate-y-2 border-2  transition-all duration-300 rounded-xl overflow-hidden ${isDarkMode ? 'bg-zinc-900 border-zinc-600' : 'bg-white border-zinc-300'}`}  style={{ boxShadow: '8px 8px 20px 0px rgba(0, 0, 0, 0.1)'}}>
       <LazyLoadImage src={imageSrc} alt={title} loading="lazy" className="w-full" />
       <div className="px-6 py-4">
         <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>

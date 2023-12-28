@@ -116,7 +116,7 @@ export default function Navbar() {
           <li><a href="#contact" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>Awards</a></li>
           <li><a href="#blog" style={{ color: isDarkMode ? 'white' : '#212121' }} className={`hover:px-4 hover:py-2 hover:rounded-full hover:text-gray-500 hover:ease-in-out duration-300 hover:font-semibold hover:mx-[-10px] hover:cursor-pointer ${isDarkMode ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-gray-300'}`}>Blog</a></li>
       </ul>
-
+      <span>
         <button
           className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 rounded-full text-xl p-2"
           onClick={toggleDarkMode}
@@ -139,6 +139,7 @@ export default function Navbar() {
             <FaBars style={{ color: isDarkMode ? 'white' : 'black' }} />
           )}
         </button>
+      </span>
       </div>
 
       {/* Mobile Menu */}
